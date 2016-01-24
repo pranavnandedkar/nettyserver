@@ -25,7 +25,7 @@ public class TouchLogManager extends ChannelInitializer<SocketChannel> {
 		pipeline.addLast("encoder", new StringEncoder());
 		pipeline.addLast("handler",new TouchLogManagerHandler());
 		 
-
+ 
 		
 	}
 
