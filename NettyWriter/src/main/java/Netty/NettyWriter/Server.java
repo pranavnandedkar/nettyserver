@@ -11,7 +11,7 @@ public class Server {
 	public static void main(String[] args) {
 		new Server(7656).run();
 	}
-	
+	 
 	public Server(int port){
 		this.port=port;
 	}
@@ -23,7 +23,7 @@ public class Server {
 		
 		try {
 			ServerBootstrap bootstrap = new ServerBootstrap()
-					.group(bossGroup, workerGroup)
+					.group(bossGroup, workerGroup) 
 					.channel(NioServerSocketChannel.class)
 					.childHandler(new TouchLogManager());
 			try {
